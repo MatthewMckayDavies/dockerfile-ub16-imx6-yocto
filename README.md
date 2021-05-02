@@ -16,7 +16,7 @@ There are two things to fix before launching the build.
 
 Launch Yocto container from the directory that contains the imx-4.9.11-1.0.0_ga directory
 ```
-docker run --rm -it -v ${PWD}:/mnt/Yocto/users mmd/ub16_imx6_yocto /bin/bash
+docker run --rm -it -v ${PWD}:/mnt/Yocto/users mmd/ub16-imx6-yocto /bin/bash
 ```
 
 Move to the BSP directory
