@@ -1,8 +1,8 @@
 # dockerfile-ub16-imx6-yocto
-Ubuntu 16.04 i.MX6 Yocto development
+Ubuntu 16.04 i.MX6 Yocto development.
 
 
-## i.MX6 4.9.11 BSP
+# i.MX6 4.9.11 BSP
 
 Notes:
 
@@ -32,3 +32,10 @@ DISTRO=fsl-imx-x11 MACHINE=imx6qsabresd source fsl-setup-release.sh -b build-x11
 bitbake fsl-image-validation-imx
 source setup-environment build-x11
 ```
+
+## Benchmarks
+
+ Build system: Ryzen 7 3700X, 64 GB RAM, Windows 10 Pro, built via Ubuntu 20 (WSL 2) and Docker (WSL 2 backend).
+
+  - fsl-image-validation-imx, compile only (no downloads) - 53 minutes.
+  - Add Chromium to local.conf, fetch and compilation of extra packages - 1 hour 8 mins (Chromium: 47 mins compiling, 7 mins linking).
