@@ -8,7 +8,7 @@ RUN apt-get install -y gawk wget git-core diffstat unzip texinfo gcc-multilib \
 build-essential chrpath socat libsdl1.2-dev xterm sed cvs subversion coreutils texi2html \
 docbook-utils python-pysqlite2 help2man desktop-file-utils curl \
 libgl1-mesa-dev libglu1-mesa-dev mercurial autoconf automake groff curl lzop asciidoc \
-u-boot-tools xsltproc xmlstarlet xz-utils debianutils iputils-ping cpio
+u-boot-tools xsltproc xmlstarlet xz-utils debianutils iputils-ping cpio vim
 
 # Set up locale
 RUN apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
